@@ -1,492 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PolarBear - Vibhu Sahu</title>
-    <link rel="icon" type="image/x-icon" href="/images/polar-bear.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css" />
+<head>
+  <meta charset="UTF-8">
   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-  emailjs.init({
-    publicKey: "gCjg5MxtIzd1tokYP",
-  });
-})();
-</script>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PolarBear - Vibhu Sahu</title> <!-- Website Tab title -->
+  
+  <link rel="icon" type="image/x-icon" href="./assets/logo.png"> <!-- Website icon -->
 
+  <!-- Meta Tags -->
+  <!-- Meta Description -->
+  <meta name="description" content="Welcome to the personal website of Vibhu Sahu, a passionate developer and technology enthusiast. Explore my projects, skills, and experiences in the world of software development. From web applications to innovative solutions, discover how I bring ideas to life through code. Join me on this journey of creativity and innovation in the tech industry.">
+  <!-- Meta Keywords -->
+  <meta name="keywords" content="Vibhu Sahu, Polarbear, VibhuSahu.github.io, Vibhu Sahu Website, Vibhu Sahu Website, Vibhu Sahu Portfolio, Vibhu Sahu Projects">
+  <!-- Meta Author -->
+  <meta name="author" content="Vibhu Sahu">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./CSS/styles.css"> <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./CSS/footerStyle.css"> <!-- Footer Stylesheet -->
+  <link rel="stylesheet" href="./CSS/headerStyle.css"> <!-- Header Stylesheet -->
+</head>
 <body>
-<!-- Navigation Menu -->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 fixed-top main-navigation">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="overlay d-flex d-lg-none"></div>
-
-    <div class="order-lg-2 bg-dark d-lg-flex w-100 sidebar pb-3 pb-lg-0" id="navmenu">
-      <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link px-3 px-lg-2 active"  href="#top">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3 px-lg-2" href="#About">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3 px-lg-2" href="#LearnWeb">Web Development</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3 px-lg-2" href="#LearnAndroid">Android Development</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3 px-lg-2" href="#modal" data-bs-toggle="modal" data-bs-target="#service">Contact</a>
-        </li>
-      </ul>
+  <!-- Header Section -->
+  <header>
+      <div class="Navbar-Container" id="navbar">
+      <nav>
+        <ul>
+          <li id="active-link"><a href="./index.html">Home</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./blogs.html">Blogs</a></li>
+          <li><a href="./certificate.html">Certificates</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</nav>
-<!-- Showcase -->
-<section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
-  <div class="container">
-    <div class="d-sm-flex align-items-center justify-content-between">
-      <div>
-        <h1>I am Vibhu Sahu a <span class="text-warning">Software developer</span></h1>
-        <p class="lead my-3 px-md-2">
-          Hi, I'm Vibhu Sahu, a B.Tech Computer Science Engineering student with a passion for machines and technology. I'm driven by curiosity and a relentless hunger for knowledge. Join me as I explore the latest tech advancements, always pushing boundaries and turning dreams into reality.
-        </p>
-        <div class="d-flex">
-          <button class="btn btnBG btn-lg me-2" data-bs-toggle="modal" data-bs-target="#service">Contact Me</button>
-          <a href="resource/CV.pdf" class="btn btn-light btn-lg" download>Download CV</a>
-        </div>
-      </div>
-      <img class="img-fluid w-50 d-none d-sm-block" src="images/logobear.png" alt="Photo of Lucas">
+
+    <div class="Navbar-Contact">
+        <button class="theme-toggle" id="theme-toggle">
+            contact
+        </button>
     </div>
-  </div>
-</section>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+  </main>
 
 
-<!-- Newsletter -->
-<section class="let-connect text-light p-5">
-  <div class="container">
-    <div class="d-md-flex justify-content-between align-items-center">
-      <h3 class="mb-3 mb-md-0">LET'S CONNECT</h3>
-      <div class="input-group news-input">
-        <input 
-          type="email" 
-          class="form-control" 
-          id="connectEmail" 
-          placeholder="Enter Email" 
-          aria-label="Recipient's Email" 
-          aria-describedby="button-addon2" 
-          required />
-        <button class="btn btn-dark btn-lg" type="button" id="sendConnectEmail">SEND</button>
-      </div>
+  <!-- Footer -->
+  <footer>
+
+    <!-- Page Links -->
+    <div id="footer-page-links-container">
+        <ul>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Certificates</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
     </div>
-  </div>
-</section>
 
-<!--  -->
-<section class="p-5">
-  <div class="container">
-    <div class="row text-cente g-4">
-      <div class="col-md">
-        <div class="card bg-dark text-light">
-          <div class="card-body text-center">
-            <div class="h1 mb-3">
-              <i class="bi bi-facebook"></i>
-            </div>
-           <h3 class="card-title mb-3">
-            BookBox
-           </h3>
-           <p class="card-text">
-            Develop a cross-platform application with centralized backend for libraries. FrontEnd both institutions and the open market.
-           </p>
-           <a href="https://github.com/theVedu/BookBOx" target="_blank" class="btn btn-info btn-lg" type="button" id="button-addon2">SEE PROJECT</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="card bg-dark text-light">
-          <div class="card-body text-center">
-            <div class="h1 mb-3">
-              <i class="bi bi-sign-turn-left"></i>
-            </div>
-           <h3 class="card-title mb-3">
-            Employee Managment
-           </h3>
-           <p class="card-text">
-            This project demonstrates best practices for efficient web application management. This program connects to a MySQL database.
-           </p>
-           <a class="btn btn-info btn-lg" href="https://github.com/VibhuSahu/EmployeeManagmentPracticeProject" target="_blank" type="button" id="button-addon2">SEE PROJECT</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="card bg-dark text-light">
-          <div class="card-body text-center">
-            <div class="h1 mb-3">
-              <i class="bi bi-plugin"></i>
-            </div>
-           <h3 class="card-title mb-3">
-            EQE
-           </h3>
-           <p class="card-text">
-            EQE(Express QR Code Evaluator) is an Android application enabling users to scan QR codes and evaluate polynomial equations efficiently.
-           </p>
-           <a class="btn btn-info btn-lg" href="https://github.com/VibhuSahu/-EQE" target="_blank" type="button" id="button-addon2">SEE PROJECT</a>
-          </div>
-        </div>
-      </div>
+    
+
+    <!-- Social Media Links -->
+     <div class="social-media-links-container">
+     </div>
+
+
+    <div class="copyright-container">
+      <p>&copy; 2024 <span id="copy-write-name">vibhusahu.github.io</span> All rights reserved. </p>
     </div>
-  </div>
-</section>
+  </footer>
 
 
 
-<!-- DSA Fundation -->
-<section class="p-5 bg-dark text-light" id="LearnRuby">
-  <div class="container">
-    <div class="row align-itens-cennter justify-content-between">
-      <div class="col-md p5">
-        <h2>Datastructure and Algorithm</h2> 
-        <p class="lead">
-          <span class="text-info">
-            <a href="https://github.com/VibhuSahu/Datastructure-and-Algorithm" style="color: #f0945c">  <!-- Add link off you git-->
-              DSA Foundation</span></a>
-              "I'm learning data structures and algorithms in 10 different programming languages. This approach allows me to understand the nuances of each language.
-        </p>
-        <p>
-          Along with coding, I'm also focusing on explaining the concepts. This helps me strengthen my problem-solving skills and solidify my understanding.
-        </p>
-        <a href="https://github.com/VibhuSahu/Datastructure-and-Algorithm" class="btn btn-info btn-light mt-3"><i class="bi bi-chevron-right"></i>Read More</a>
-        <a href="#Top" class="btn btn-info btn-light mt-3">Back to Top</a>
-      </div>
-      <div class="col-md p-5">
-        <img src="images/dsapic.jpg" class="img-fluid" alt="React">
-      </div>
-    </div> 
+
+  <!-- JavaScript -->
+  <script src="./JS/script.js"></script>  <!-- main Script File -->
   
-  </div>
-</section>
 
-
-
-<!--Learn Web development Fundamentals  -->
-<section class="p-5" id="LearnWeb">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-md p-5">
-        <img src="images/CuteBear.png" class="img-fluid fundimental" alt="Fundimentals">
-      </div>
-      <div class="col-md p5">
-        <h2>Learn the Fundamentals</h2>
-        <p class="lead">
-          <span class="text-info"><a href="https://github.com/VibhuSahu/Learn-the-Fundamentals" style="color: #f0945c">Fundamentals of Web Development </span></a> <!-- Add link for your link -->
-          I'm working on web development, using technologies like ReactJS, Django, and Bootstrap to create dynamic, responsive websites. My focus is on building user-friendly applications that are optimized, maintainable, and scalable.
-        </p>
-        <a href="https://github.com/VibhuSahu/Learn-the-Fundamentals" class="btn btn-info btn-light mt-3"><i class="bi bi-chevron-right"></i>Read More</a>
-        <a href="#top" class="btn btn-info btn-light mt-3">Back to Top</a>
-      </div>
-    </div> 
-
-  </div>
-</section>
-  <!--Learn About Ruby on Rails -->
-<section class="p-5 bg-dark text-light" id="LearnAndroid">
-  <div class="container">
-    <div class="row align-itens-cennter justify-content-between">
-      <div class="col-md p5">
-        <h2>Android Development</h2> 
-        <p class="lead">
-          <span class="text-info">
-            <a href="https://github.com/VibhuSahu/Android-Development" style="color: #f0945c">  <!-- Add link off you git-->
-              Android Development Fundation</span></a>
-              I've started learning Android development, exploring how to create mobile applications. This is an exciting step that opens up new opportunities in the world of mobile technology.
-        </p>
-        <p>
-          I've started learning Android development, exploring how to create mobile applications. This is an exciting step that opens up new opportunities in the world of mobile technology.
-        </p>
-        <a href="https://github.com/VibhuSahu/Android-Development" class="btn btn-info btn-light mt-3"><i class="bi bi-chevron-right"></i>Read More</a>
-        <a href="#Top" class="btn btn-info btn-light mt-3">Back to Top</a>
-      </div>
-      <div class="col-md p-5">
-        <img src="images/dsapic.jpg" class="img-fluid" alt="React">
-      </div>
-    </div> 
- 
-  </div>
-</section>
-
-
-<!-- Skills Section -->
-<section class="p-5 bg-light text-dark" id="skills">
-  <div class="container">
-    <h2 class="text-center mb-4">Skills</h2>
-    <div class="row">
-
-      <!-- Frameworks Section -->
-      <div class="col-md-6 col-lg-4">
-        <h4>Frameworks</h4>
-        <p>ReactJS & NextJS</p>
-        <div class="container skill-bar"><div class="skills react-nextjs">45%</div></div>
-        <p>Android Development</p>
-        <div class="container skill-bar"><div class="skills android-dev">35%</div></div>
-        <p>ExpressJS & NodeJS</p>
-        <div class="container skill-bar"><div class="skills express-node">75%</div></div>
-        <p>Django</p>
-        <div class="container skill-bar"><div class="skills django">65%</div></div>
-        <p>FastAPI</p>
-        <div class="container skill-bar"><div class="skills fastapi">65%</div></div>
-        <p>SpringBoot</p>
-        <div class="container skill-bar"><div class="skills springboot">30%</div></div>
-      </div>
-
-      <!-- Languages Section -->
-      <div class="col-md-6 col-lg-4">
-        <h4>Languages</h4>
-        <p>Java</p>
-        <div class="container skill-bar"><div class="skills java">45%</div></div>
-        <p>Python</p>
-        <div class="container skill-bar"><div class="skills python">85%</div></div>
-        <p>C/C++</p>
-        <div class="container skill-bar"><div class="skills cpp">45%</div></div>
-        <p>C#</p>
-        <div class="container skill-bar"><div class="skills csharp">35%</div></div>
-        <p>Swift</p>
-        <div class="container skill-bar"><div class="skills swift">35%</div></div>
-      </div>
-
-      <!-- Other Skills Section -->
-      <div class="col-md-6 col-lg-4">
-        <h4>Other Skills</h4>
-        <p>JavaScript</p>
-        <div class="container skill-bar"><div class="skills javascript">75%</div></div>
-        <p>HTML/CSS</p>
-        <div class="container skill-bar"><div class="skills html-css">85%</div></div>
-        <p>Linux Shell</p>
-        <div class="container skill-bar"><div class="skills linux-shell">45%</div></div>
-        <p>Bash Shell Script</p>
-        <div class="container skill-bar"><div class="skills bash-shell">45%</div></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- About section -->
-<section class="p-5 bg-dark text-light" id="About">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-md">
-        <img src="images/ProfilePic.jpeg" class="img-fluid mt-auto" alt="Profile Picture">
-      </div>
-      <div class="col-md p-5">
-        <h2>About Vibhu Sahu</h2>
-        <div class="bio">
-            <h3 class="text-size">Frontend Developer | BackEnd Developer | Android Developer | B.Tech in Computer Science</h3>
-            <p>
-                Passionate about harnessing technology to create seamless user experiences, I am a dedicated frontend developer with a solid foundation in HTML, CSS, and JavaScript. Currently pursuing my B.Tech in Computer Science, I thrive on turning innovative ideas into functional web applications. My journey includes developing a responsive portfolio website, an Android app for evaluating polynomial equations, and a decentralized library platform.
-            </p>
-            <p>
-                Beyond coding, I love mentoring peers, exploring the latest tech trends, and diving into problem-solving challenges. Join me as I explore the intersection of creativity and technology!
-            </p>
-          
-        </div>
-        <a href="https://github.com/vibhusahu" target="_blank" class="btn btn-info btn-light mt-3">
-            <i class="bi bi-chevron-right"></i>Git
-        </a>
-        <a href="#Top" class="btn btn-info btn-light mt-3">Back to Top</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="stats-section">
-  <div class="stats-container">
-    <div class="stats-item">
-      <span class="stats-number">11+</span>
-      <p>Projects Done</p>
-    </div>
-    <div class="stats-item">
-      <span class="stats-number">84+</span>
-      <p>Total Commits</p>
-    </div>
-    <div class="stats-item">
-      <span class="stats-number">133+</span>
-      <p>Total Contributions</p>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<!-- Questions sections -->
-<!-- <scetion class="p-5">
-
-</scetion> -->
-
-<footer class="text-center text-white" style="background-color: #f0945c">
-  <!-- Grid container -->
-  <div class="container">
-    <!-- Section: Links -->
-    <section class="mt-5">
-      <!-- Grid row-->
-      <div class="row text-center d-flex justify-content-center pt-5">
-        <!-- Grid column -->
-        <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#About" class="text-white">About us</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!" class="text-white">Products</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!" class="text-white">Awards</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!" class="text-white">Help</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!" class="text-white" href="#modal" data-bs-toggle="modal" data-bs-target="#service">Contact</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row-->
-    </section>
-    <!-- Section: Links -->
-
-    <hr class="my-5" />
-
-    <!-- Section: Text -->
-    <section class="mb-5">
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-8">
-          <p>
-            I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Section: Text -->
-
-    <!-- Section: Social -->
-    <section class="text-center mb-5">
-      <a href="https://x.com/SahuVibhu" target="_blank" class="text-white me-4">
-        <i class="fa-solid fa-x"></i>
-      </a>
-      <a href="mailto: vibhu6751@gmail.com" target="_blank" class="text-white me-4">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-      <a href="https://www.instagram.com/vibhuty_ji/" target="_blank" class="text-white me-4">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/vibhu-sahu-0a434620b/" target="_blank" class="text-white me-4">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/VibhuSahu" target="_blank" class="text-white me-4">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.hackerrank.com/profile/vibhu6751" target="_blank" class="text-white me-4">
-        <i class="fa-brands fa-hackerrank"></i>
-      </a>
-      <a href="https://leetcode.com/u/PolarBear2003/" target="_blank" class="text-white me-4">
-        <i class="fa-solid fa-l"></i>
-      </a>
-    </section>
-    <!-- Section: Social -->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div
-       class="text-center p-3"
-       style="background-color: rgba(0, 0, 0, 0.2)"
-       >
-    © 2020 Copyright:
-    <a class="text-white" href="/">polarbear.org</a
-      >
-  </div>
-  <!-- Copyright -->
-</footer>
-
-<!-- Modal for contact form -->
-<div class="modal fade" id="service" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p class="lead">Fill out this form and I will get back to you</p>
-              <form id="contactForm">
-                  <div class="mb-3">
-                      <label for="first-name" class="col-form-label">First and Last Name:</label>
-                      <input type="text" id="first-name" class="form-control" name="user_name" placeholder="First and Last Name" required />
-                  </div>
-                  <div class="mb-3">
-                      <label for="phone" class="col-form-label">Mobile Number:</label>
-                      <input type="tel" id="phone" class="form-control" name="user_phone" placeholder="264810000000" required />
-                  </div>
-                  <div class="mb-3">
-                      <label for="email" class="col-form-label">Email:</label>
-                      <input type="email" id="email" class="form-control" name="user_email" placeholder="example@gmail.com" required />
-                  </div>
-                  <div class="mb-3">
-                      <label for="message" class="col-form-label">Message:</label>
-                      <textarea id="message" class="form-control" name="user_message" placeholder="Your message here..." rows="4" required></textarea>
-                  </div>
-              </form>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button id="submitForm" type="button" class="btn btn-primary">Submit</button>
-          </div>
-      </div>
-  </div>
-</div>
-
-
-      <script src="js/mailsend.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-     <script src="js/swiped-events.js"></script>
-     <script src="js/script.js"></script>
-     
 </body>
-
 </html>

@@ -1,0 +1,105 @@
+/* NAVBAR */
+header {
+  background: var(--secondary-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .Navbar-Container {
+  margin: 0;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    position: relative;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    /* color: inherit; */
+    position: relative;
+    text-decoration: none;
+}
+
+
+/* UNDERLINE (hidden initially) */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.4s ease-out;
+}
+
+/* HOVER EFFECT */
+nav ul li a:hover::after,
+nav ul li a:focus::after {
+  width: 100%;
+}
+
+
+/* Button Styles */
+button {
+    background: var(--tertiary-color);
+    color: var(--secondary-text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    text-size-adjust: 100%;
+    font-size: 1rem;
+}
+
+button:checked {
+    background: var(--primary-color);
+}
+
+button:hover {
+    background: var(--primary-color);
+}
+
+/* Current Page */
+#active-link a{
+    color: var(--primary-color);
+}
+
+
+/* Dynamic Styles */
+@media (max-width: 567px) {
+
+    header {
+        padding: 0.9vh;
+    }
+
+    nav ul {
+        gap: 1vh;
+    }
+
+    nav ul li a {
+        font-size: 1.7vh;
+    }
+    
+    button {
+        padding: 0.4vh 0.8vh;
+        font-size: 1.9vh;
+        border-radius: 6px;
+    }
+}

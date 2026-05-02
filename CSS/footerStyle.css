@@ -1,0 +1,53 @@
+/* FOOTER */
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+/* Page Links */
+    /* <!-- Page Links -->
+    <div id="footer-page-links-container">
+        <ul>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Certificates</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div> */
+
+
+footer .footer-page-links-container ul {
+  list-style: none;
+}
+
+footer .footer-page-links-container ul li {
+  underline: none;
+  line-style: none;
+}
+}
+
+
+
+/* Copyright Container */
+footer .copyright-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+footer .copyright-container span {
+  text-decoration: underline;
+  margin: 0;
+  font-size: 0.9rem;
+}
+

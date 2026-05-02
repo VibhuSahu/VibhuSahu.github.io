@@ -1,0 +1,40 @@
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 30px;
+}
+
+.progress {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.progress svg {
+  transform: rotate(-90deg);
+}
+
+.progress circle {
+  fill: none;
+  stroke-width: 10;
+}
+
+.bg {
+  stroke: #e6e6e6;
+}
+
+.fill {
+  stroke: #14b8a6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+}

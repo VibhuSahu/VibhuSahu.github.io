@@ -1,0 +1,38 @@
+/* Global Variables for Styles */
+:root {
+  /* Background Colors */
+  --primary-bg-color: #f8f9fa;
+  --secondary-bg-color: #343a40;
+  --tertiary-bg-color: #495057;
+
+  /* Theme Colors */
+  --primary-color: #f0945c;
+  --secondary-color: #495057;
+  --tertiary-color: #17a2b8;
+
+  /* Text Colors */
+  --primary-text-color: #343a40;
+  --secondary-text-color: #f8f9fa;
+  --tertiary-text-color: #495057;
+}
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+   
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FULL PAGE GRID */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
