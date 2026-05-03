@@ -3,42 +3,79 @@ footer {
   background: var(--primary-color);
   color: #fff;
   text-align: center;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+
   padding-top: 2rem;
 }
 
-/* Page Links */
-    /* <!-- Page Links -->
-    <div id="footer-page-links-container">
-        <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Certificates</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-    </div> */
+/* PAGE LINKS CONTAINER */
+footer #footer-page-links-container ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
 
-
-footer .footer-page-links-container ul {
+/* LIST ITEMS */
+footer #footer-page-links-container ul li {
   list-style: none;
 }
 
-footer .footer-page-links-container ul li {
-  underline: none;
-  line-style: none;
+/* LINKS */
+footer #footer-page-links-container ul li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
 }
+
+
+footer #footer-page-links-container ul li a:hover {
+  font-weight: 800;
 }
 
 
+/* HORIZONTAL LINE */
+footer hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 2rem;
+}
 
-/* Copyright Container */
+
+/* ONE-LINE TEXT */
+footer #One-line-text-footer {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 0 2rem;
+}
+
+
+/* SOCIAL MEDIA LINKS */
+footer #social-media-links-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+footer #social-media-links-container a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+/* COPYRIGHT */
 footer .copyright-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid rgba(121, 120, 120, 0.3);
   background: rgba(0, 0, 0, 0.2);
   font-size: 0.9rem;
   font-weight: 300;
@@ -47,7 +84,22 @@ footer .copyright-container {
 
 footer .copyright-container span {
   text-decoration: underline;
-  margin: 0;
-  font-size: 0.9rem;
 }
 
+
+/* Dynamic Styles */
+@media (max-width: 425px) {
+  footer #footer-page-links-container ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  footer hr {
+    margin: 0 1rem;
+  }
+
+  footer #One-line-text-footer p {
+    font-size: 1.5vh;
+    margin: 0 1rem;
+  }
+}
