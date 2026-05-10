@@ -1,0 +1,77 @@
+/* Project Highlights Section Styles */
+#highlight-content {
+    width: 100vw;
+    align-items: center;
+    padding: 2rem;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 2rem;
+}
+
+.highlight-content-container {
+    flex-shrink: 0;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    scroll-snap-align: center;
+    gap: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    width: 25rem;
+    height: 17rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* button colors */
+.highlight-content-container button {
+    width: 7rem;
+    height: 3rem;
+    color: var(--primary-text-color);
+    border: none;
+    border-radius: 5px;
+    margin: auto 1rem; 
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    #highlight-content {
+        padding: 1rem;
+    }
+}
+
+
+/* Different Gradient Backgrounds */
+.highlight-content-container:nth-child(1) {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+.highlight-content-container:nth-child(2) {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+}
+
+.highlight-content-container:nth-child(3) {
+    background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+.highlight-content-container:nth-child(4) {
+    background: linear-gradient(135deg, #84fab0, #8fd3f4);
+}
+
+.highlight-content-container:nth-child(5) {
+    background: linear-gradient(135deg, #fccb90, #d57eeb);
+}
+
+/* Popup Hover Effect */
+.highlight-content-container {
+    transition: 0.3s ease;
+}
+
+.highlight-content-container:hover {
+    transform: scale(1.05);
+}

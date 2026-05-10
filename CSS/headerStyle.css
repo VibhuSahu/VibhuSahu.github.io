@@ -8,6 +8,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 1px solid rgb(47, 47, 47);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .Navbar-Container {
@@ -56,24 +58,27 @@ nav ul li a:focus::after {
 
 
 /* Button Styles */
-button {
-    background: var(--tertiary-color);
+header button {
+    background: var(--primary-color);
     color: var(--secondary-text-color);
+    width: 8rem;
+    height: 2.8rem;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: background 0.3s ease;
     text-size-adjust: 100%;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
-button:checked {
+header button:checked {
     background: var(--primary-color);
 }
 
-button:hover {
-    background: var(--primary-color);
+header button:hover {
+    border: 2px solid var(--secondary-color);
+    opacity: 0.8;
 }
 
 /* Current Page */

@@ -1,118 +1,296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>PolarBear - Vibhu Sahu</title> <!-- Website Tab title -->
-  
-  <link rel="icon" type="image/x-icon" href="./assets/logo.png"> <!-- Website icon -->
+  <head>
+    <meta charset="UTF-8" />
 
-  <!-- Meta Tags -->
-  <!-- Meta Description -->
-  <meta name="description" content="Welcome to the personal website of Vibhu Sahu, a passionate developer and technology enthusiast. Explore my projects, skills, and experiences in the world of software development. From web applications to innovative solutions, discover how I bring ideas to life through code. Join me on this journey of creativity and innovation in the tech industry.">
-  <!-- Meta Keywords -->
-  <meta name="keywords" content="Vibhu Sahu, Polarbear, VibhuSahu.github.io, Vibhu Sahu Website, Vibhu Sahu Website, Vibhu Sahu Portfolio, Vibhu Sahu Projects">
-  <!-- Meta Author -->
-  <meta name="author" content="Vibhu Sahu">
-  
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="./CSS/styles.css"> <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="./CSS/footerStyle.css"> <!-- Footer Stylesheet -->
-  <link rel="stylesheet" href="./CSS/headerStyle.css"> <!-- Header Stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PolarBear - Vibhu Sahu</title>
+    <!-- Website Tab title -->
+
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
+    <!-- Website icon -->
+
+    <!-- Meta Tags -->
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Welcome to the personal website of Vibhu Sahu, a passionate developer and technology enthusiast. Explore my projects, skills, and experiences in the world of software development. From web applications to innovative solutions, discover how I bring ideas to life through code. Join me on this journey of creativity and innovation in the tech industry."
+    />
+    <!-- Meta Keywords -->
+    <meta
+      name="keywords"
+      content="Vibhu Sahu, Polarbear, VibhuSahu.github.io, Vibhu Sahu Website, Vibhu Sahu Website, Vibhu Sahu Portfolio, Vibhu Sahu Projects"
+    />
+    <!-- Meta Author -->
+    <meta name="author" content="Vibhu Sahu" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./CSS/styles.css" /><!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./CSS/footerStyle.css" /><!-- Footer Stylesheet -->
+    <link rel="stylesheet" href="./CSS/headerStyle.css" /><!-- Header Stylesheet -->
+
+    <link rel="stylesheet" href="./CSS/HomePage/HeroSetionStyle.css" /><!-- Hero Section Stylesheet -->
+    <link rel="stylesheet" href="./CSS/HomePage/LetsConnectFormStyle.css" /><!-- Let's Connect Section Stylesheet -->
+    <link rel="stylesheet" href="./CSS/HomePage/ProjectHighlightsSection.css" /><!-- Project Highlights Section Stylesheet -->
 
 
-  <!-- icon attachment -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-
-  <!-- Header Section -->
-  <header>
+    <!-- icon attachment -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
       <div class="Navbar-Container" id="navbar">
-      <nav>
-        <ul>
-          <li id="active-link"><a href="./index.html">Home</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="./blogs.html">Blogs</a></li>
-          <li><a href="./certificate.html">Certificates</a></li>
-        </ul>
-      </nav>
-    </div>
+        <nav>
+          <ul>
+            <li id="active-link"><a href="./index.html">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./blogs.html">Blogs</a></li>
+            <li><a href="./certificate.html">Certificates</a></li>
+          </ul>
+        </nav>
+      </div>
 
-    <div class="Navbar-Contact">
-        <button class="theme-toggle" id="theme-toggle">
-            contact
-        </button>
-    </div>
-  </header>
+      <div class="Navbar-Contact">
+        <button class="theme-toggle" id="theme-toggle">contact</button>
+      </div>
+    </header>
 
-  <!-- Main Content -->
-  <main>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero-content">
+        <!-- Text Button and Content Sub Section -->
+        <div class="hero-text-button-container">
+          <!-- Text and Content Area -->
+          <div class="hero-content-container">
+            <h1>Hi, I'm <span>&nbsp;Vibhu Sahu</span></h1>
+            <p>
+              Welcome to my personal website! I'm a passionate developer and
+              technology enthusiast. Explore my projects, skills, and
+              experiences in the world of software development. From web
+              applications to innovative solutions, discover how I bring ideas
+              to life through code. Join me on this journey of creativity and
+              innovation in the tech industry.
+            </p>
+          </div>
 
-  </main>
+          <!-- CV and Contact Button -->
+          <div class="social-media-links-container">
+            <button
+              class="cv-button"
+              id="cv-button"
+              href="./assets/CV.pdf"
+              target="_blank"
+            >
+              DOWNLOAD CV
+            </button>
+
+            <button class="contact-button" id="contact-button">
+              CONTACT ME
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Image Sub Section -->
+        <div class="hero-image-container">
+          <img src="./assets/homePage/HeroBearImg.png" alt="Hero Image" />
+        </div>
+      </section>
+
+      <!-- Let's Connect Section -->
+      <section id="lets-connect-section">
+        <div class="lets-connect-heading-container">
+          <h3 class="">LET'S CONNECT</h3>
+        </div>
+        <div class="lets-connect-input-container">
+          <input
+            type="email"
+            class="lets-connect-input"
+            id="connectEmail"
+            placeholder="Enter Email"
+            aria-label="Recipient's Email"
+            aria-describedby="button-addon2"
+            required
+          />
+          <button
+            class="lets-connect-button"
+            type="button"
+            id="sendConnectEmail"
+          >
+            SEND
+          </button>
+        </div>
+      </section>
 
 
-  <!-- Footer -->
-  <footer>
+      <!-- Highlight Section -->
+      <section id="highlight-content">
 
-    <!-- Page Links -->
-    <div id="footer-page-links-container">
+        <div id="highlight-content-container-first" class="highlight-content-container-first highlight-content-container">
+          <h2>HIGHLIGHTS</h2>
+          <p>
+            I thrive on turning innovative ideas into tech-driven solutions,
+            building scalable, efficient systems that solve real-world problems.
+          </p>
+
+          <div>
+            <button>Learn More</button>
+            <button>View</button>
+          </div>
+
+        </div>
+
+        <div id="highlight-content-container-second" class="highlight-content-container-second highlight-content-container">
+          <h2>HIGHLIGHTS</h2>
+          <p>
+            I thrive on turning innovative ideas into tech-driven solutions,
+            building scalable, efficient systems that solve real-world problems.
+          </p>
+
+          <div>
+            <button>Learn More</button>
+            <button>View</button>
+          </div>
+
+        </div>
+
+        <div id="highlight-content-container-third" class="highlight-content-container-third highlight-content-container">
+          <h2>HIGHLIGHTS</h2>
+          <p>
+            I thrive on turning innovative ideas into tech-driven solutions,
+            building scalable, efficient systems that solve real-world problems.
+          </p>
+
+          <div>
+            <button>Learn More</button>
+            <button>View</button>
+          </div>
+
+        </div>
+
+        <div id="highlight-content-container-second" class="highlight-content-container-second highlight-content-container">
+          <h2>HIGHLIGHTS</h2>
+          <p>
+            I thrive on turning innovative ideas into tech-driven solutions,
+            building scalable, efficient systems that solve real-world problems.
+          </p>
+
+          <div>
+            <button>Learn More</button>
+            <button>View</button>
+          </div>
+
+        </div>
+
+        <div id="highlight-content-container-third" class="highlight-content-container-third highlight-content-container">
+          <h2>HIGHLIGHTS</h2>
+          <p>
+            I thrive on turning innovative ideas into tech-driven solutions,
+            building scalable, efficient systems that solve real-world problems.
+          </p>
+
+          <div>
+            <button>Learn More</button>
+            <button>View</button>
+          </div>
+
+        </div>
+
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Page Links -->
+      <div id="footer-page-links-container">
         <ul>
           <li><a href="#">About Me</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Certificates</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-    </div>
+      </div>
 
+      <hr />
+      <!-- Horizontal Line -->
 
-    <hr/> <!-- Horizontal Line -->
-    
+      <!-- One-line Text -->
+      <div id="One-line-text-footer">
+        <p>
+          I thrive on turning innovative ideas into tech-driven solutions,
+          building <br />scalable, efficient systems that solve real-world
+          problems.
+        </p>
+      </div>
 
-    <!-- One-line Text -->
-    <div id="One-line-text-footer">
-      <p>I thrive on turning innovative ideas into tech-driven solutions, building <br/>scalable, efficient systems that solve real-world problems.</p>
-    </div>
+      <!-- Social Media Links -->
+      <div id="social-media-links-container">
+        <a href="https://x.com/SahuVibhu" target="_blank" class="X-icon-footer">
+          <i class="fa-solid fa-x"></i>
+        </a>
+        <a
+          href="mailto: vibhu6751@gmail.com"
+          target="_blank"
+          class="mail-icon-footer"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/vibhu-sahu-0a434620b/"
+          target="_blank"
+          class="linkedin-icon-footer"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/VibhuSahu"
+          target="_blank"
+          class="github-icon-footer"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.hackerrank.com/profile/vibhu6751"
+          target="_blank"
+          class="hackerrank-icon-footer"
+        >
+          <i class="fa-brands fa-hackerrank"></i>
+        </a>
+        <a
+          href="https://leetcode.com/u/PolarBear2003/"
+          target="_blank"
+          class="leetcode-icon-footer"
+        >
+          <i class="fa-solid fa-l"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/vibhuty_ji/"
+          target="_blank"
+          class="instagram-icon-footer"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
 
-    <!-- Social Media Links -->
-     <div id="social-media-links-container">
-      <a href="https://x.com/SahuVibhu" target="_blank" class="X-icon-footer">
-        <i class="fa-solid fa-x"></i>
-      </a>
-      <a href="mailto: vibhu6751@gmail.com" target="_blank" class="mail-icon-footer">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/vibhu-sahu-0a434620b/" target="_blank" class="linkedin-icon-footer">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/VibhuSahu" target="_blank" class="github-icon-footer">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.hackerrank.com/profile/vibhu6751" target="_blank" class="hackerrank-icon-footer">
-        <i class="fa-brands fa-hackerrank"></i>
-      </a>
-      <a href="https://leetcode.com/u/PolarBear2003/" target="_blank" class="leetcode-icon-footer">
-        <i class="fa-solid fa-l"></i>
-      </a>
-      <a href="https://www.instagram.com/vibhuty_ji/" target="_blank" class="instagram-icon-footer">
-        <i class="fab fa-instagram"></i>
-      </a>
-     </div>
+      <div class="copyright-container">
+        <p>
+          &copy; 2024 <span id="copy-write-name">vibhusahu.github.io</span> All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
 
-
-    <div class="copyright-container">
-      <p>&copy; 2024 <span id="copy-write-name">vibhusahu.github.io</span> All rights reserved. </p>
-    </div>
-  </footer>
-
-
-
-
-  <!-- JavaScript -->
-  <script src="./JS/script.js"></script>  <!-- main Script File -->
-  
-
-</body>
+    <!-- JavaScript -->
+    <script src="./JS/script.js"></script>
+    <!-- main Script File -->
+  </body>
 </html>

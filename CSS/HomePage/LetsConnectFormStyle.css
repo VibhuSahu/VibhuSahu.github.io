@@ -1,0 +1,58 @@
+/* Let's Connect Section */
+#lets-connect-section {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+/* Let's Connect Heading */
+#lets-connect-section .lets-connect-heading-container h3 {
+    font-size: 2rem;
+    color: var(--secondary-text-color);
+
+}
+
+/* Let's Connect Input Container */
+#lets-connect-section .lets-connect-input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+}
+
+/* Let's Connect Input Field */
+#lets-connect-section .lets-connect-input-container input {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    width: 18rem;
+    height: 3rem;
+}
+
+#lets-connect-section .lets-connect-input-container input:focus {
+    outline: none;
+}
+
+
+#lets-connect-section .lets-connect-input-container button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.4rem;
+    width: 7rem;
+    height: 3rem;
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#lets-connect-section .lets-connect-input-container button:hover {
+    background-color: var(--tertiary-color);
+}
+

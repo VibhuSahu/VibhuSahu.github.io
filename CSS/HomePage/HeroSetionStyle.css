@@ -1,0 +1,114 @@
+
+
+/* Hero Section Styles */
+#hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9.5vw 7.5vw;
+    gap: 5vw;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-bg-color);
+}
+
+/* Hero Content Container */
+.hero-content-container {
+    max-width: 40vw;
+}
+
+.hero-content-container h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.hero-content-container h1 span {
+    color: var(--primary-color);
+
+}
+
+.hero-content-container p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align:center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 1rem;
+}
+
+
+
+.social-media-links-container {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.social-media-links-container button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 12rem;
+    height: 4rem;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button {
+    background-color: var(--primary-bg-color);
+    color: black;
+}
+
+.cv-button:hover {
+    border: 2px solid var(--secondary-color);
+    opacity: 0.8;
+    background-color: var(--primary-bg-color);
+}
+
+.contact-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+}
+
+.contact-button:hover {
+    border: 2px solid var(--secondary-color);
+    opacity: 0.8;
+}
+
+/* Hero Image Container */
+.hero-image-container img {
+    width: 40vw;
+}
+
+
+/* Dynamic Styles */
+@media (max-width: 768px) {
+    #hero-content {
+        flex-direction: column;
+        padding: 5vw;
+    }
+
+    /* 👇 Move image to top */
+    .hero-image-container {
+        order: -1;
+    }
+
+    /* 👇 Keep text below */
+    .hero-text-button-container {
+        order: 1;
+    }
+
+    .hero-content-container {
+        height: 80%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image-container img {
+        width: 80vw;
+    }
+}
