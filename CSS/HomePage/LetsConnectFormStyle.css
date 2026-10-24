@@ -56,3 +56,12 @@
     background-color: var(--tertiary-color);
 }
 
+@media (max-width: 768px) {
+    #lets-connect-section .lets-connect-input-container input {
+        width: 12rem;
+    }
+
+    #lets-connect-section .lets-connect-heading-container h3 {
+        font-size: 1.5rem;
+    }
+}

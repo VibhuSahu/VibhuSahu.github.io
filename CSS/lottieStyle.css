@@ -1,0 +1,13 @@
+
+.not-found {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.lottie {
+  width: min(90vw, 591px);
+  aspect-ratio: 591 / 420;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+}

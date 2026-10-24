@@ -1,0 +1,43 @@
+#skill-cards-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-block: 1rem;
+}
+
+
+#social-media-link-cards {
+  width: 80%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns across */
+  gap: 16px; /* Space between the cards */
+  box-sizing: border-box;
+}
+
+.social-media-link-card {
+  width: 100%;
+  /* Ratio 4:1 (Width : Height) creates wide horizontal banner cards */
+  aspect-ratio: 4 / 1;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 14px; /* Slight rounded edges matching image */
+  overflow: hidden;
+}
+
+.social-media-link-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures banner image completely fills card area */
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 600px) {
+  #social-media-link-cards {
+    gap: 8px; /* Tighter gap on smaller screens */
+  }
+}

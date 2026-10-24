@@ -1,3 +1,5 @@
+import { loadLottie } from "./utils/lottieAnimation.js";
+
 const radius = 65;
 const circumference = 2 * Math.PI * radius;
 
@@ -24,3 +26,5 @@ document.querySelectorAll(".progress").forEach(el => {
   const total = el.getAttribute("data-total");
   createProgress(el, percent, total);
 });
+
+
