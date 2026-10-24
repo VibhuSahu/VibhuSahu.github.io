@@ -6,6 +6,11 @@
   margin-block: 1rem;
 }
 
+.coding-platform-card {
+  margin-inline: 20px;
+  padding: 28px 36px;
+}
+
 
 #social-media-link-cards {
   width: 80%;
@@ -37,6 +42,10 @@
 
 /* Responsive adjustment for mobile screens */
 @media (max-width: 600px) {
+  .coding-platform-card {
+    padding: 20px;
+  }
+
   #social-media-link-cards {
     gap: 8px; /* Tighter gap on smaller screens */
   }
